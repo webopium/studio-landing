@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			LandingPage
+		</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css">
+		 <link href="css/owl.carousel.css" rel="stylesheet">
+		 <link href="css/owl.theme.css" rel="stylesheet">
+		 <link href="css/owl.transitions.css" rel="stylesheet">
+		<script src="script/jquery-1.9.1.min.js"></script> 
+		<script src="script/owl.carousel.js"></script> 
+		<script src="script/owl.carousel.min.js"></script> 
+		<script>
+				$(document).ready(function() {
+			 
+			  var owl = $("#owl-demo");
+			 
+			  owl.owlCarousel({
+				  items : 5, //10 items above 1000px browser width
+				  itemsDesktop : [1000,5], //5 items between 1000px and 901px
+				  itemsDesktopSmall : [900,3], // betweem 900px and 601px
+				  itemsTablet: [600,2], //2 items between 600 and 0
+				  itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+			  });
+			 
+			  // Custom Navigation Events
+			  $(".next").click(function(){
+				owl.trigger('owl.next');
+			  })
+			  $(".prev").click(function(){
+				owl.trigger('owl.prev');
+			  })
+			  $(".play").click(function(){
+				owl.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
+			  })
+			  $(".stop").click(function(){
+				owl.trigger('owl.stop');
+			  })
+			 
+			});
+		</script>
+		<script>
+				$(document).ready(function() {
+			 
+			  var owl = $("#owl-demo2");
+			 
+			  owl.owlCarousel({
+				  items : 4, //10 items above 1000px browser width
+				  itemsDesktop : [1000,5], //5 items between 1000px and 901px
+				  itemsDesktopSmall : [900,3], // betweem 900px and 601px
+				  itemsTablet: [600,2], //2 items between 600 and 0
+				  itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+			  });
+			 
+			  // Custom Navigation Events
+			  $(".next").click(function(){
+				owl.trigger('owl.next');
+			  })
+			  $(".prev").click(function(){
+				owl.trigger('owl.prev');
+			  })
+			  $(".play").click(function(){
+				owl.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
+			  })
+			  $(".stop").click(function(){
+				owl.trigger('owl.stop');
+			  })
+			 
+			});
+		</script>
+		<script type="text/javascript">
+		  function openbox(id,popup_form) {
+			var div = document.getElementById(id);
+			var popup_div = document.getElementById(popup_form);
+			if(div.style.display == 'block') {
+				div.style.display = 'none';
+			}
+			else {
+				div.style.display = 'block';
+			}
+		  }
+		</script>
+	</head>
+	<body>
+		<div id="popup">
+			<div class="popup_selector">
+				<form class="popup_form">
+					<div class="close" onclick="openbox('popup'); return false;">
+						<a href="#">
+							X
+						</a>
+					</div>
+					<div class="title">
+						Заполните форму и наш<br /> консультант свяжется с вами<br /> В БЛИЖАЙШЕЕ ВРЕМЯ
+					</div>
+					<input class="text" type="text" placeholder="Ваше имя"></br>
+					<input class="text" type="text" placeholder="Номер телефона"></br>
+					<input class="text" type="text" placeholder="Email"></br>
+					<input class="button" type="image" src="images/popup_button.png">
+				</form>
+			</div>
+		</div>
+		<div id="head">
+			<video class="head_video" poster="images/poster.png" autoplay="autoplay" loop="loop" muted="muted" tabindex="0.21">
+				<!-- <source src="video/TimeLapse.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+				<source src="video/TimeLapse.webm" type='video/webm;codecs="vp8, vorbis"' />
+				Video tag not supported. Download the video <a href="movie.webm">here</a>. -->
+			</video>
+			<div class="selector">
+				<div class="head_phone">
+					+38 (050) 400-59-93<br />
+					<span>
+						г. Одесса, ул. Советская 53
+					</span>
+				</div>
+				<div class="head_title">
+					Продающие<br /> лендинги
+				</div>
+				<div class="head_title2">
+					Cпециальные цены для Одесситов
+				</div>
+				<div class="head_button">
+					<a href="#" onclick="openbox('popup');return false;">
+						<img src="images/head_button.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="advantages">
+			<div class="selector">
+				<div class="advantages_title">
+					Преимущества наших сайтов
+				</div>
+				<div class="advantages_title2">
+					Все преимущества <span>уже включены в стоимость</span> разработки<br /> поэтому заказывая сайт у нас за них не нужно будет платить потом.
+				</div>
+				<table class="advantages_table">
+					<tr>
+						<td>
+							<img src="images/advantages1.png" alt="">
+						</td>
+						<td>
+							<img src="images/advantages2.png" alt="">
+						</td>
+						<td>
+							<img src="images/advantages3.png" alt="">
+						</td>
+					</tr>
+					<tr>
+						<td class="title">
+							Привлекательный дизайн
+						</td>
+						<td class="title">
+							Полная адаптивность
+						</td>
+						<td class="title">
+							Панель управления
+						</td>
+					</tr>
+					<tr>
+						<td class="text">
+							Вы получаете современный, уникальный дизайн продуманный до мелочей, разработанный лучшими веб дизайнерами
+						</td>
+						<td class="text">
+							Дизайн сайта будет корректно работать и отображается на любых устройствах. Начиная от смартфона и заканчивая пк
+						</td>
+						<td class="text">
+							С помощью интуитивно понятной системе управления сайта Вы сможете самостоятельно наполнять сайт
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="images/advantages4.png" alt="">
+						</td>
+						<td>
+							<img src="images/advantages5.png" alt="">
+						</td>
+						<td>
+							<img src="images/advantages6.png" alt="">
+						</td>
+					</tr>
+					<tr>
+						<td class="title">
+							SEO оптимизация
+						</td>
+						<td class="title">
+							Скорость
+						</td>
+						<td class="title">
+							Защита
+						</td>
+					</tr>
+					<tr>
+						<td class="text">
+							Мы так же оказываем услуги по оптимизации сайта для достижения наивысших позиций в поисковой выдаче Яндекса и Google
+						</td>
+						<td class="text">
+							Высокая скорость загрузки и работы сайта позволяет не терять посетителей и будущих клиентов
+						</td>
+						<td class="text">
+							Все сайты надежно защищены от взлома и  вирусов. Автоматические резервные копии каждый день!
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="images/advantages7.png" alt="">
+						</td>
+						<td>
+							<img src="images/advantages8.png" alt="">
+						</td>
+						<td>
+							<img src="images/advantages9.png" alt="">
+						</td>
+					</tr>
+					<tr>
+						<td class="title">
+							Хостинг услуги
+						</td>
+						<td class="title">
+							Доменное имя
+						</td>
+						<td class="title">
+							Статистика
+						</td>
+					</tr>
+					<tr>
+						<td class="text">
+							В стоимость разработки сайта входит пакет хостинг услуг сроком на 1 год. Мы хостимся на лучших серверах Украины, России и Европы
+						</td>
+						<td class="text">
+							Мы подберем и приобретем для Вас любое доменное имя. Регистрация  доменного имени так же включена в стоимость создания сайта
+						</td>
+						<td class="text">
+							Подключаем к вашему сайту счетчики посещений и инструменты для аналитики от Google и Яндекс
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="looks_like">
+			<div class="selector">
+				<div class="looks_like_title">
+					Хотите узнать как будет выглядеть ваш лендинг?
+				</div>
+				<div class="looks_like_title2">
+					 ОСТАВЬТЕ ЗАЯВКУ, ПОСЛЕ УТОЧНЕНИЯ НЕСКОЛЬКИХ ВОПРОСОВ  МЫ ВЫШЛЕМ ВАМ В ТЕЧЕНИИ СУТОК МАКЕТ ВАШЕГО<br /> БУДУЩЕГО САЙТА, СОВЕРШЕННО БЕСПЛАТНО!
+				</div>
+				<div class="looks_like_button">
+					<a href="#" onclick="openbox('popup');return false;">
+						<img src="images/looks_like_button.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="landing_page">
+			<div class="selector">
+				<div class="landing_page_title">
+					Landing page
+				</div>
+				<div class="landing_page_title2">
+					Лендинг- это страница, которая подталкивает пользователя совершить требуемое действие - купить что-то или<br /> подписаться на расылку. 
+				</div>
+				<div class="landing_page_content">
+					<ul class="landing_page_first">
+						<li class="icon">
+							<img src="images/landing_page_icon1.png" alt="">
+						</li>
+						<li class="text">
+							Страница должна соответствовать ожиданиям посетителя
+						</li>
+						<li class="icon">
+							<img src="images/landing_page_icon2.png" alt="">
+						</li>
+						<li class="text">
+							У хорошей landing page должен быть эффективный заголовок
+						</li>
+						<li class="icon">
+							<img src="images/landing_page_icon3.png" alt="">
+						</li>
+						<li class="text">
+							Наличие цены за товар или услугу увеличит конверсию лендинга
+						</li>
+					</ul>
+					<ul class="landing_page_second">
+						<li class="icon">
+							<img src="images/landing_page_icon4.png" alt="">
+						</li>
+						<li class="text">
+							Имеет уникальное торговое предложение
+						</li>
+						<li class="icon">
+							<img src="images/landing_page_icon5.png" alt="">
+						</li>
+						<li class="text">
+							Дизайн должен привлекать внимание пользователя
+						</li>
+						<li class="icon">
+							<img src="images/landing_page_icon6.png" alt="">
+						</li>
+						<li class="text">
+							Элементы landing page в логической визуальной последовательности
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="special">
+			<div class="selector">
+				<div class="special_title">
+					СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ<br /> для ЛУГАНЧАН!
+				</div>
+				<div class="special_title2">
+					Разработка лендинга И настройка контекстной<br /> рекламы по цене 2013 года!*
+				</div>
+				<div class="special_price">
+					<div class="price">
+						1500
+					</div>
+					<div class="text">
+						гривен
+					</div>
+				</div>
+				<div class="special_button">
+					<a href="#" onclick="openbox('popup');return false;">
+						<img src="images/special_button.png" alt="">
+					</a>
+				</div>
+				<div class="special_condition">
+					*цена без скидки составляет 3200 грн.<br />
+					**для получения скидки необходим паспорт с Луганской пропиской
+				</div>
+			</div>
+		</div>
+		<div id="how_we_work">
+			<div class="selector">
+				<div class="special">
+					<div class="how_we_work_title">
+						Как МЫ РАБОТАЕМ
+					</div>
+					<div class="how_we_work_title2">
+						Никаких котов в мешке, Вы контролируете каждый шаг!
+					</div>
+					<div class="how_we_work_scheme">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="question">
+			<div class="selector">
+				<div class="question_title">
+					Остались вопросы, нужна помощь?
+				</div>
+				<div class="question_title2">
+					 ОСТАВЬТЕ ЗАЯВКУ,  УКАЖИТЕ УДОБНОЕ ДЛЯ ВАС ВРЕМЯ ЗВОНКА И НАШ МЕНЕДЖЕР СВЯЖЕТСЯ С ВАМИ<br /> ЭТО БЕСПЛАТНО И НИ К ЧЕМУ ВАС НЕ ОБЯЗЫВАЕТ
+				</div>
+				<div class="question_button">
+					<a href="#" onclick="openbox('popup');return false;">
+						<img src="images/question_button.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="examples">
+			<div class="selector">
+				<div class="examples_title">
+					ПРИМЕРЫ НАШИХ ЛЕНДИНГОВ
+				</div>
+				<div class="examples_carousel">
+					<div id="owl-demo" class="owl-carousel owl-theme">
+						<div class="item"><a href="#"><img src="images/examples1.png" width="180"  alt=""></a></div>
+						<div class="item"><a href="#"><img src="images/examples2.png" width="180"  alt=""></a></div>
+						<div class="item"><a href="#"><img src="images/examples3.png" width="180"  alt=""></a></div>
+						<div class="item"><a href="#"><img src="images/examples4.png" width="180"  alt=""></a></div>
+						<div class="item"><a href="#"><img src="images/examples5.png" width="180"  alt=""></a></div>
+						<div class="item"><a href="#"><img src="images/examples1.png" width="180"  alt=""></a></div>
+						<div class="item"><a href="#"><img src="images/examples2.png" width="180"  alt=""></a></div>
+						<div class="item"><a href="#"><img src="images/examples3.png" width="180"  alt=""></a></div>
+						<div class="item"><a href="#"><img src="images/examples4.png" width="180"  alt=""></a></div>
+						<div class="item"><a href="#"><img src="images/examples5.png" width="180"  alt=""></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="specialists">
+			<div class="selector">
+				<div class="specialists_title">
+					Над вашим проектом будут работать
+				</div>
+				<div class="specialists_title2">
+					Квалифицированные специталисты с многолетним опытом разработки и рекламы<br /> веб-сайтов.
+				</div>
+				<div class="specialists_carousel">
+					<div id="owl-demo2" class="owl-carousel owl-theme">
+						<div class="item">
+							<div class="photo">
+								<img src="images/specialists_photo.png" alt="">
+								<div class="post">
+									Менеджер проекта
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="photo">
+								<img src="images/specialists_photo.png" alt="">
+								<div class="post">
+									Дизайнер
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="photo">
+								<img src="images/specialists_photo.png" alt="">
+								<div class="post">
+									Маркетолог
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="photo">
+								<img src="images/specialists_photo.png" alt="">
+								<div class="post">
+									Программист
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="photo">
+								<img src="images/specialists_photo.png" alt="">
+								<div class="post">
+									Менеджер проекта
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="photo">
+								<img src="images/specialists_photo.png" alt="">
+								<div class="post">
+									Дизайнер
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="photo">
+								<img src="images/specialists_photo.png" alt="">
+								<div class="post">
+									Маркетолог
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="photo">
+								<img src="images/specialists_photo.png" alt="">
+								<div class="post">
+									Программист
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="ready">
+			<div class="selector">
+				<div class="ready_text">
+					<div>
+						Готовы к увеличению продаж?
+					</div>
+					<div>
+						<img src="images/ready_arrow.png" alt="">
+					</div>
+					<div class="ready_button">
+						<a href="#" onclick="openbox('popup');return false;">
+							<img src="images/ready_button.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
